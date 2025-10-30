@@ -1,9 +1,9 @@
 EXPECTED="Hello, Test!"
 OUTPUT=$(node -e "const { greet } = require('./src/app'); console.log(greet('Test'));")
 if [ "$OUTPUT" = "$EXPECTED" ]; then
-  echo "Test passed"
+  echo "yay!! Test passed"
   exit 0
 else
-  echo "Test failed: expected '$EXPECTED' but got '$OUTPUT'"
+  echo "Oops!! Test failed: expected '$EXPECTED' but got '$OUTPUT'"
   exit 1
 fi
